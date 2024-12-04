@@ -1,0 +1,95 @@
+/* Belezas Naturais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* corpo da página */
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Cabeçalho e navegação */
+header {
+    background-color: #007BFF; /* Cor de fundo */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Cobrir a largura da página toda */
+    position: fixed; /* Fixar no topo da página */
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+body nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+body nav img {
+    height: 50px;
+    margin-right: 20px; 
+}
+
+body nav ul {
+    list-style: none;
+    display: flex;
+}
+
+body nav ul li {
+    margin-left: 20px;
+}
+
+body nav ul li a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: 700;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+body nav ul li a:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    border-radius: 5px;
+}
+
+body main {
+    max-width: 1200px;
+    margin: 80px auto 20px; 
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+main a img{
+    margin: 10px;
+    width: 100vh;
+}
+.dicas-turista h2{
+    text-align: center;
+}
+.dicas-turista P{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+footer{
+    text-align: center;
+    background-color: thistle;
+}
+
+
+
+
+
+
+/* /Fim do css pagina beleza naturais */

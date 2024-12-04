@@ -1,0 +1,184 @@
+/* Belezas Naturais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.conteiner{
+    position: relative;
+    min-height: 100vh;
+    background:#ddd;
+}
+.conteiner h1{
+font-size: 40px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: normal;
+padding: 25px;
+color: #333;
+text-align: center;
+text-transform: capitalize;
+}
+.conteiner .image-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+.conteiner .image-conteiner .image{
+    height: 250px;
+    width: 350px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    cursor: pointer;
+}
+.conteiner .image-conteiner .image img{
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+    transition: 2s linear;
+}
+.conteiner .image:hover{
+    transform: scale(1.1);
+}
+.conteiner .popup-image{
+    position: fixed;
+    top: 60px; left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.conteiner .popup-image span{
+    position: absolute;
+    top: 0; right: 10px; 
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.conteiner .popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+
+@media (max-width:768px){
+  .conteiner .popup-image img{
+    width: 95%;
+  } 
+}
+
+/* corpo da página */
+body#belezas-naturais {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Cabeçalho e navegação */
+body#belezas-naturais header {
+    background-color: #007BFF; /* Cor de fundo */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Cobrir a largura da página toda */
+    position: fixed; /* Fixar no topo da página */
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+body#belezas-naturais nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+body#belezas-naturais nav img.flag {
+    height: 50px;
+    margin-right: 20px; 
+}
+
+body#belezas-naturais nav ul {
+    list-style: none;
+    display: flex;
+}
+
+body#belezas-naturais nav ul li {
+    margin-left: 20px;
+}
+
+body#belezas-naturais nav ul li a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: 700;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+body#belezas-naturais nav ul li a:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    border-radius: 5px;
+}
+
+body#belezas-naturais main {
+    max-width: 1200px;
+    margin: 80px auto 20px; 
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+body#belezas-naturais h1 {
+    text-align: center;
+    margin: 100px;
+    margin-bottom: 30px;
+}
+
+body#belezas-naturais .beauty-item {
+    display: flex;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    margin-top: 50px;
+    
+}
+
+body#belezas-naturais .beauty-item img {
+    max-width: 200px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+body#belezas-naturais .beauty-item .content {
+    flex: 1;
+}
+
+body#belezas-naturais .beauty-item h2 {
+    margin-bottom: 10px;
+    color: #007BFF;
+    text-align: center;
+}
+
+body#belezas-naturais .beauty-item p {
+    margin-bottom: 10px;
+}
+
+
+
+/* /Fim do css pagina beleza naturais */

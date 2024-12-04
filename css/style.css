@@ -1,0 +1,261 @@
+/* inicio do css da apgina index */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body.Conheça-suiça {
+    background-color: white;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+header .btn-contato button,
+.estilo-site button {
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: 2s;
+
+}
+
+/* estilo do header */
+header {
+    width: 100%;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 5s;
+    z-index: 999999999999999;
+}
+
+/* centralizando os iten da header */
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* badeira da suiça */
+header .logo img {
+    max-width: 110px;
+}
+/*estilo do mrnu dinamico*/
+header .logo img.logo-branca{
+    display: none;
+}
+header.rolar{
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 0 8px #00000059 ;
+}
+header.rolar .menu-desktop nav ul li a{
+    color: #000;
+}
+header.rolar .btn-contato button{
+    border: 1px solid #000;
+    color: #000;
+}
+header.rolar .btn-contato button:hover{
+    background-color: #000;
+    color: #fff;
+}
+header.rolar .logo .logo-padrao{
+    display: none;
+}
+header.rolar .logo .logo-branca{
+    display:block;
+
+
+
+}
+
+/*----------------------*/
+header .menu-desktop nav ul {
+    list-style-type: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .menu-desktop nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* botao da header */
+
+header .btn-contato button {
+    width: 140px;
+    height: 50px;
+}
+
+/* efeito de transiçao ao passar o mouse */
+.menu-desktop nav a:hover {
+    transform: scale(1.05);
+    border-radius: 30px;
+}
+
+/* mudança de cor do butao */
+header .btn-contato button:hover,
+.estilo-site button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* estilo do site */
+section.estilo-site {
+    height: 100vh;
+    background-image: url(images/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.estilo-site .interface {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.estilo-site .txt-site h1 {
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 200;
+
+}
+
+.estilo-site .txt-site h1 span {
+    display: block;
+    font-weight: 800;
+}
+
+.estilo-site .txt-site h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+    margin-top: 100px;
+}
+
+.estilo-site button {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+}
+
+/* Estilo de lugares */
+section.lugares {
+    padding: 80px 0;
+}
+
+.lugares .iens-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    gap: 10%;
+}
+
+.lugares .iens-conteiner .img-itens img {
+    max-width: 480px;
+}
+
+.lugares .iens-conteiner .txt-itens h2 {
+    font-size: 2em;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.iens-conteiner .txt-itens h2 span {
+    font-weight: 300;
+}
+
+/* estilos dos botões contatos*/
+section.contato {
+    background-color: #fff;
+    padding: 80px 0;
+
+}
+
+.txt-contato, .icons-contato {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+.contato .txt-contato h3{
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}
+.contato .txt-contato h3 span{
+    display: block;
+    font-weight: 700;
+
+}
+.contato .icons-contato a{
+    text-decoration: none;
+}
+.contato .icons-contato button{
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: 5s;
+}
+.contato .icons-contato button i{
+    font-size: 24px;
+}
+.contato .icons-contato button:hover{
+    background-color: #000;
+
+}
+.contato .icons-contato button:hover i, .contato .icons-contato button:hover p{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+    background-color: thistle;
+}
+
+/* /Fim do css pagina index  */
